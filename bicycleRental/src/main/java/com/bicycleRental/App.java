@@ -16,6 +16,9 @@ import com.biciclyRentil.validatetor.PromotionValidatorInterface;
  */
 public class App 
 {
+	//DSOLO CREE LOS ATRIBUTOS PARA QUE APAREZCAN EN EL DIAGRAMA UML GENERADO
+	public AbstractRentailPrice rentail;
+	public PromotionValidatorInterface validator;
 	
     public static void main( String[] args )
     {
