@@ -3,11 +3,6 @@
 <img src="https://github.com/jonathanlezaeta/ejercicio/blob/master/bicycleRental/UML.jpg">
 
 Para resolver el calculo del precio de los alquileres se hiso una herencia con un composite para modelar las promosiones.
-
-1. Rental by hour, charging $5 per hour
-2. Rental by day, charging $20 a day
-3. Rental by week, changing $60 a week
-
 Se abstrajo el calculo del precio de alquileres en la AbstractRentailPrice con un metodo abstracto getRentalBicycle, para que cada hijo defina su logica. Y si se desean agregar nuevas formas de calcular precios solo se agrega un hijo a la herencia y se implementa el metodo de una forma diferente.
 
 Para los casos: 
@@ -15,7 +10,7 @@ Para los casos:
 2. Rental by day, charging $20 a day
 3. Rental by week, changing $60 a week
 
-Los calculos son analohos unidad de tiempo por precio, y se modelan con la clase SimplePrice, las distintas instancias de esta clase modelan los diferentes tipos de precios. Por ejemplo:
+Los calculos son analogos unidad de tiempo por precio, y se modelan con la clase SimplePrice, las distintas instancias de esta clase modelan los diferentes tipos de precios. Por ejemplo:
     SimplePrice hours = new SimplePrice();
 		hours.setDescripcion("PRECIOS POR HORA ");
 		hours.setPrice(5);
